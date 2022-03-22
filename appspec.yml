@@ -4,3 +4,9 @@ files:
   - source: webapp.war
     destination: /opt/tomcat/webapps/
 
+hooks:
+
+  AfterInstall:
+    - location: 
+      timeout: 300
+      runas: root
